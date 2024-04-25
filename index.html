@@ -1,0 +1,103 @@
+<html dir="rtl" lang="he-IL">
+<head>
+    <title>טיימר למידה</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70223101-11"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-70223101-11');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h1 class="fw300">טכניקת פומודורו</h1>
+            <p>
+                פומודורו היא טכניקה לניצול הזמן המשתמש בטיימר כדי לחלק את פרקי העבודה לסבבים של כ-25 דקות,
+                הנקראים Pomodoros, ומחולקים על ידי הפסקות קצרות של כ-5 דקות. הטכניקה הומצאה בתחילת שנות ה-90 ע"י המפתח
+                והיזם פרצ'סקו סירילו והוכחה בסיוע טווח הקשב והריכוז.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close btn-flat">בוא נתחיל</a>
+        </div>
+    </div>
+    <!-- card -->
+    <div class="row">
+        <div class="card" style="background-color: #9c6644; text-align: center;">
+            <div class="card-content white-text">
+                <!-- customizable settings -->
+                <div id="adjust">
+					    <img src="https://emeky.co.il/wp-content/uploads/2022/10/%D7%9C%D7%91%D7%9F-%D7%9C%D7%9C%D7%90.png" alt="לוגו" style="width: 250px; height: auto;">
+
+                    <div class="row mobileoverride">
+                        <div class="col s4">
+                            <p class="titlexplain">זמן הפסקה ארוכה</p>
+                            <a href="#" id="add-ext-break-btn">+</a>
+                            <p id="ext-break-time-set">15</p>
+                            <a href="#" id="minus-ext-break-btn">-</a>
+                        </div>
+                        <div class="col s4">
+                            <p class="titlexplain">זמן הפסקה רגילה</p>
+                            <a href="#" id="add-break-btn">+</a>
+                            <p id="break-time-set">5</p>
+                            <a href="#" id="minus-break-btn">-</a>
+                        </div>
+                        <div class="col s4">
+                            <p class="titlexplain">זמן למידה (דקות)</p>
+                            <a href="#" id="add-work-btn">+</a>
+                            <p id="work-time-set">25</p>
+                            <a href="#" id="minus-work-btn">-</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- pomodoro/break count -->
+                <h2 id="work-num" class="card-title">לימוד #1</h2>
+                <h2 id="break-num" class="card-title">הפסקה #1</h2>
+                <!-- main display -->
+                <div id="time-div">
+                    <div id="work-display">
+                        <p class="bigtime" id="work-time-display">25:00</p>
+                        <!--<h5 class="workorbreak" id="work-text">לימוד</h5>-->
+                    </div>
+                    <div id="break-display">
+                        <p class="bigtime" id="break-time-display">5:00</p>
+                        <!--<h5 class="workorbreak" id="break-text">זמן להרגע</h5>-->
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!-- buttons -->
+            <button id="start" class="z-depth-1">מתחילים ללמוד</button>
+            <button id="pause" class="z-depth-1">עצור</button>
+            <button id="resume" class="z-depth-1">המשך</button>
+            <button id="reset" class="z-depth-1">אפס</button>
+        </div>
+    </div>
+    <!-- pop up info box -->
+    <div id="information" class="container center">
+        <a class="modal-trigger" href="#modal1">הסבר על שיטת הפומודורו</a>
+    </div>
+</div>
+<!-- audio -->
+<audio id="audio">
+    <source src="sounds/notification.mp3" type="audio/mpeg">
+</audio>
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

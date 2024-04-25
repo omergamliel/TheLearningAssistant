@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Mikhmoret';
+    src: url('fonts/MIKHMORET-ROUNDED-REGULAR-AAA.TTF') format('truetype');
+}
+
+body {
+    background-color: white;
+    font-family: 'Mikhmoret';
+    direction: rtl;
+}
+
+@media (max-width: 768px) {
+    .mobileoverride {
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+    }
+    .card-title {
+        font-weight: 400 !important;
+    }
+}
+
+.titlexplain {
+    font-size: 22px;
+    opacity: .8;
+    margin-bottom: 2px !important;
+}
+
+.bigtime {
+    font-size: 11rem;
+    font-weight: 100;
+    letter-spacing: -0.2rem;
+    opacity: 1;
+    line-height: 1em;
+}
+
+#information {
+    margin: 10px auto;
+}
+
+#information a {
+    color: black;
+	font-size: 22px;
+}
+
+.modal .modal-content p {
+    color: #888888;
+    line-height: 1.68rem;
+}
+
+.card {
+    width: 95%;
+    max-width: 460px;
+    margin: 15px auto 0px auto !important;
+}
+
+#add-work-btn,
+#work-time-set,
+#minus-work-btn {
+    display: inline;
+    font-size: 22px;
+}
+
+#add-break-btn,
+#break-time-set,
+#minus-break-btn {
+    display: inline;
+    font-size: 22px;
+}
+
+#add-ext-break-btn,
+#ext-break-time-set,
+#minus-ext-break-btn {
+    display: inline;
+    font-size: 22px;
+}
+
+#add-work-btn,
+#minus-work-btn,
+#add-break-btn,
+#minus-break-btn,
+#add-ext-break-btn,
+#minus-ext-break-btn {
+    color: white;
+    padding: 8px;
+}
+
+#pomo-num,
+#break-num {
+    display: inline;
+    font-size: 20px;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    width: 95%;
+}
+
+.card-title {
+    margin: 15px 0;
+}
+
+.fw300 {
+    font-weight: 300 !important;
+    font-size: 4rem;
+    letter-spacing: -0.02rem;
+	color: purple;
+}
+
+#time-div {
+    margin: 40px 0 30px 0;
+    padding: 10px;
+}
+
+button {
+    display: inline-block;
+    width: 80%;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    border: 0;
+    letter-spacing: 0.05rem;
+}
+
+button, .modal-action.modal-close.btn-flat {
+    font-weight: 600;
+}
+
+button:focus {
+    background: rgba(243, 156, 107, .8) !important;
+}
+
+#start,
+#pause,
+#resume,
+#reset {
+    font-size: 1.8rem;
+}
+
+#start {
+    width: 87%;
+    margin: -10px 0 19px 0;
+}
+
+#pause,
+#resume,
+#reset {
+    width: 40%;
+    margin: -10px 3% 19px 3%;
+}
+
+footer {
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #FFF484;
+}
+
+/* הגדרת הלוגו כאלמנט שצף מעל כל התוכן */
+.logo-overlay {
+    position: fixed; /* נותן ללוגו מיקום קבוע ומרחף */
+    top: 50%; /* ממקם את הלוגו באמצע המסך, לפי הגובה */
+    left: 50%; /* ממקם את הלוגו באמצע המסך, לפי הרוחב */
+    transform: translate(-50%, -50%); /* מתקן את המיקום כך שהמרכז המדויק של הלוגו יהיה באמצע */
+    z-index: 1000; /* הופך את הלוגו לשכבה העליונה ביותר */
+}
+
+/* ייתכן שתצטרך להתאים את גודל הלוגו לפי הצורך */
+.logo-overlay img {
+    width: 100px; /* או כל גודל אחר שמתאים לך */
+    height: auto;
+}
+
